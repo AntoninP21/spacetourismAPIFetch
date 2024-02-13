@@ -1,0 +1,115 @@
+.planet-container{
+    background-image: url("../styles/images/starsdestop.png");
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+    background-position: center center; /* Centrer l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+
+.gauchePlanet{
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    color: #D0D6F9;
+    font-weight: bolder;
+    width: 900px;
+    height: 650px;
+    margin-top: 3rem;
+}
+.titreDestination{
+    display: flex;
+    justify-content: center;
+}
+
+.numeroDestination{
+    color: grey;
+    margin-right: 2rem;
+}
+
+.imagePlanet{
+    margin-top: 5rem;
+    margin-left: 8rem;
+    margin-right: 7rem;
+}
+
+.droitePlanet{
+    padding-top: 12rem;
+    margin-right: 7rem;
+}
+
+ul{
+    list-style:none;
+    text-decoration-style:none;
+}
+.planet-details{
+    text-align: start;
+}
+
+.titrePlanet{
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.detailPlanet{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 5rem;
+}
+.planet-container{
+    display:flex;
+}
+
+.planet-list ul{
+    display: flex;
+    margin-bottom: 2rem;
+    width: 300px;
+    justify-content: space-between;
+    opacity: initial;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+.planet-list ul li{
+    cursor:pointer;
+}
+.selectedNav{
+    border-bottom: 2px solid; /* Définissez la bordure inférieure initialement transparente */
+    border-bottom-color: white;
+}
+
+.statsPlanet{
+    display: flex;   
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+.titreInfoPlanet{
+    filter: unset;
+    opacity: initial;
+    z-index: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font: 16px;
+    font-weight: 800;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    text-decoration: none;
+}
+.infoPlanet{
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    color: white;
+    margin-top: 1rem;
+}
