@@ -1,12 +1,13 @@
 .bodyPlanet{
     background-image: url("../styles/images/starsdestop.png");
     margin: 0; /* Supprimer la marge par défaut du corps */
-    padding: 0; /* Supprimer le rembourrage par défaut du corps */
-    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */ /* Définir la hauteur à 100% de la vue du navigateur */
     background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
     background-position: center center; /* Centrer l'image horizontalement et verticalement */
     background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
-    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    background-repeat: repeat; /* Ne pas répéter l'image */
+    height:100vh;
+    overflow-x: clip;
 }
 
 .gauchePlanet{
@@ -21,7 +22,9 @@
 }
 .titreDestination{
     display: flex;
+
     justify-content: center;
+    word-break:break-word;
 }
 
 .numeroDestination{
@@ -52,6 +55,7 @@ ul{
     font-family: 'Bellefair', serif;
     font-size: 100px;
     color: white;
+    margin-top:1.5rem;
     margin-bottom: 1.5rem;
 }
 .detailPlanet{
@@ -123,7 +127,7 @@ ul{
         align-items: center;
     }
     .titreDestination{
-        display: block;
+        display: flex;
         margin-left: 3rem;
     }
     .imagePlanet{
@@ -173,6 +177,7 @@ ul{
         font-size: 100px;
         color: white;
         margin-bottom: 1.5rem;
+        text-transform: uppercase;
     }
     .statsPlanet{
         display: flex;   
@@ -198,18 +203,26 @@ ul{
         color: #D0D6F9;
         text-decoration: none;
     }
+    .bodyPlanet{
+        height:100%;
+        overflow-x: clip;
+    }
 }
 @media screen and (max-width: 770px) {
+
     .titreDestination{
         display: flex;
         justify-content: center;
-        word-break: break-word;
+        word-break: break-all;
     }
     .statsPlanet{
         display: flex;   
-        flex-direction: column;
         justify-content: space-evenly;
         margin-top: 2rem;
         margin-right: 0rem;
+    }
+    .bodyPlanet{
+        height:100%;
+        overflow-x: clip;
     }
 }
