@@ -1,4 +1,4 @@
-.planet-container{
+.bodyPlanet{
     background-image: url("../styles/images/starsdestop.png");
     margin: 0; /* Supprimer la marge par défaut du corps */
     padding: 0; /* Supprimer le rembourrage par défaut du corps */
@@ -112,4 +112,104 @@ ul{
     font-size: 28px;
     color: white;
     margin-top: 1rem;
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .planet-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titreDestination{
+        display: block;
+        margin-left: 3rem;
+    }
+    .imagePlanet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.7) translate(0, -5rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .gauchePlanet{
+        font-family: 'Barlow Condensed',sans-serif;
+        letter-spacing: 4.72px;
+        font-size: 28px;
+        color: #D0D6F9;
+        font-weight: bolder;
+        height: 350px;
+        margin-top: 3rem;
+    }
+    .droitePlanet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        margin-right: 0rem;
+    }
+    .detailPlanet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        color: #D0D6F9;
+        font-weight: bold;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+    .titrePlanet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bellefair', serif;
+        font-size: 100px;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    .statsPlanet{
+        display: flex;   
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-right: 0rem;
+    
+    }
+    .titreInfoPlanet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        filter: unset;
+        opacity: initial;
+        z-index: 100px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-family: 'Barlow Condensed',sans-serif;
+        font: 16px;
+        font-weight: 800;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 770px) {
+    .titreDestination{
+        display: flex;
+        justify-content: center;
+        word-break: break-word;
+    }
+    .statsPlanet{
+        display: flex;   
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-right: 0rem;
+    }
 }

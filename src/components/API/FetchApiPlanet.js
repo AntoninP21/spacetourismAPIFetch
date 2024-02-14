@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
 import React from 'react'
 import "./styles/FetchApiPlanet.css"
+import BarNav from "./BarNav";
+
+
 
 function FetchApiPlanet() {
 
@@ -29,7 +32,9 @@ function FetchApiPlanet() {
       };
 
     return (
-        <div className="planet-container">
+      <div className="bodyPlanet">
+        <BarNav/>
+        <div className="planet-container">         
             <div className="gauchePlanet">
                 <div className="titreDestination">
                     <span className="numeroDestination">01</span>CHOOSE YOUR DESTINATION
@@ -41,16 +46,16 @@ function FetchApiPlanet() {
             <div className="droitePlanet">
                 <div className="planet-list">
                 <ul>
-  {data.map((planet) => (
-    <li
-      key={planet.id}
-      onClick={() => handlePlanetClick(planet)}
-      className={planet === selectedPlanet ? 'selectedNav' : ''}
-    >
-      {planet.title}
-    </li>
-  ))}
-</ul>
+                  {data.map((planet) => (
+                    <li
+                      key={planet.id}
+                      onClick={() => handlePlanetClick(planet)}
+                      className={planet === selectedPlanet ? 'selectedNav' : ''}
+                    >
+                      {planet.title}
+                    </li>
+                  ))}
+                </ul>
                 </div>
                 <div className="planet-details">
                 {selectedPlanet && (
@@ -72,6 +77,7 @@ function FetchApiPlanet() {
                 </div>
             </div>
         </div>
+      </div>
     )
 }
 
