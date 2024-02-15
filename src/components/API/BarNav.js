@@ -1,13 +1,14 @@
 import React from 'react'
 import "./styles/BarNav.css"
+import { Link } from 'react-router-dom'
 function BarNav() {
   return (
     <div className='bodyBarNav'>
         <nav className='header'>
         <div className='box_logo'>
-            <a href='/'>
+            <Link to='/'>
                 <img src={require('./styles/images/Logo.png')} alt='Logo' />
-            </a>
+            </Link>
     </div>
     <nav role="navigation">
             <div id="menuToggle">
@@ -16,9 +17,9 @@ function BarNav() {
               <span></span>
               <span></span>
               <ul id="menu">
-                <a href='/'><li>00 HOME</li></a>
-                <a href='/'><li>01 DESTINATION</li></a>
-                <a href='/'><li>02 CREW</li></a>
+                <Link to='/'><li>00 HOME</li></Link>
+                <Link to='/destination'><li>01 DESTINATION</li></Link>
+                <Link to='/crew'><li>02 CREW</li></Link>
                 <a href='/'><li>03 TECHNOLOGY</li></a>
               </ul>
             </div>
@@ -26,21 +27,21 @@ function BarNav() {
     <div className='decoration_header'></div>
     <div className='background_header'>
         <div className='container_header'>
-                <a aria-label="Accueil" href='/'>
+                <Link to ='/'>
                     <div className='box_nav'>
                        <span className='bold'>00</span> HOME
                     </div>               
-                </a>  
-                    <a aria-label="Destination" href='/'>
+                </Link>  
+                <Link to='/destination'>
                     <div className='box_nav'>
-                        <span className='bold'>01</span> DESTINATION
+                    <span className='bold'>01</span> DESTINATION
                     </div>    
-                    </a>
-                <a aria-label="Equipage" href='/'>
+                </Link>
+                <Link to='/crew'>
                     <div className='box_nav'>
                         <span className='bold'>02</span> CREW
                     </div>    
-                </a>       
+                </Link>       
                 <a aria-label="Technologie" href='/'>
                     <div className='box_nav'>    
                         <span className='bold'>03</span> TECHNOLOGY

@@ -1,0 +1,149 @@
+.bodyHome{
+    background-image: url("../styles/images/welcomeBackground.png");
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+    background-position: center center; /* Centrer l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+.main_welcome{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.contenu_welcome{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rem;
+    margin-left: 10rem;
+    margin-right: 17rem;
+    justify-content: space-between;
+
+}
+.text_welcome{
+    width: 50%;
+}
+.titre_welcome{
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.soustitre_welcome{
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    color: #D0D6F9;
+    font-weight: bold;
+
+}
+.corps_welcome{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: bold;
+}
+.bouton_welcome{
+    background-color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+    max-height: 15rem;
+    min-width: 15rem;
+    min-height: 15rem;
+    margin-top: 5rem;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px #ffffff50;
+    transition: box-shadow 0.3s linear;
+}
+.bouton_lien{
+    text-decoration: none;
+    color: #000000;
+}
+.bouton_welcome:hover{
+    box-shadow: 0px 0px 0px 60px #ffffff50;
+}
+@media screen and (max-width: 1400px){
+    .contenu_welcome{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .bodyHome{
+        background-image: url("../styles/images/welcomeBackgroundturn.png");
+        margin: 0; /* Supprimer la marge par défaut du corps */
+        padding: 0; /* Supprimer le rembourrage par défaut du corps */
+        height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+        background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+        background-position: center center; /* Centrer l'image horizontalement et verticalement */
+        background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+        background-repeat: no-repeat; /* Ne pas répéter l'image */
+    }
+    .titre_welcome{
+        font-family: 'Bellefair', serif;
+        font-size: 150px;
+        color: white;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        
+    }
+    .text_welcome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .corps_welcome{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 770px){
+    
+    .text_welcome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .titre_welcome{
+        font-size: 80px;
+        word-break: break-all;
+    }
+    .contenu_welcome{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .main_welcome{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    #main.row{
+        width: 100%;
+    }
+}
