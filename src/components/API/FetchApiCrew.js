@@ -31,12 +31,11 @@ function FetchApiCrew() {
   return (
     <div className='bodyCrew'>
         <BarNav/>
+        <ul>
         {data.map((crew) => (
-            <li
-              key={crew.id}
-              onClick={() => handleCrewClick(crew)}
-              className={crew === selectedCrew ? 'selectedNav' : ''}>
-                <div className="slide" href="">
+            <li onClick={() => handleCrewClick(crew)}
+              key={crew.id}>
+                <div className={crew === selectedCrew ? 'slideDisplayed' : 'slide'}href="">
                     <div className="equipage">
                       <div className="main_equipage">
                          <div className="left_equipage">
@@ -50,7 +49,8 @@ function FetchApiCrew() {
                                 {crew.title}
                             </div>
                             <div className="corps_equipage">
-                                {crew.detail}</div>
+                                {crew.detail}
+                            </div>
                          </div>
                          <div className="right_equipage">
                             <img src={`data:image/png;base64,${dataImage}`} alt={crew.title}/>
@@ -60,6 +60,19 @@ function FetchApiCrew() {
                 </div> 
             </li>
         ))}
+        </ul>
+        <div className='checkboxCrew'>
+            {data.map((crew) => (
+                <div key={crew.id}>
+                    <input
+                        type="checkbox"
+                        id={`crewCheckbox_${crew.id}`}
+                        checked={selectedCrew === crew}
+                        onChange={() => handleCrewClick(crew)}
+                    />
+                </div>
+            ))}
+        </div>
     </div>
   )
 }

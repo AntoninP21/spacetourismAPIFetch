@@ -7,6 +7,7 @@
     background-position: center center; /* Centrer l'image horizontalement et verticalement */
     background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
     background-repeat: no-repeat; /* Ne pas répéter l'image */
+    overflow:hidden;
 }
 .slides{
     display: flex;
@@ -15,6 +16,7 @@
 }
 .main_equipage{
     display: flex;
+    text-align:start;
 }
 .left_equipage{
     width: 50%;
@@ -32,13 +34,15 @@
     font-family: 'Bellefair', serif;
     font-size: 58px;
     color: grey;
-    margin-top: 10rem;
+    margin-top: 5rem;
+    text-align:start;
 }
 .nom_equipage{
     font-family: 'Bellefair', serif;
     font-size: 100px;
     color: white;
     margin-bottom: 1.5rem;
+    text-align:start;
 }
 .corps_equipage{
     font-family: 'Barlow', sans-serif;
@@ -47,6 +51,7 @@
     font-weight: bold;
     margin-top: 4rem;
     margin-right: 20rem;
+    text-align:start;
 }
 .right_equipage{
     display: flex;
@@ -248,11 +253,26 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .slide {
+  .slideDisplayed {
     width: 100vw;
     float: left;
   }
+  .slide{
+    display:none;
+  }
+
+  .checkboxCrew{
+    position: relative;
+    top: 75%;
+    right:90%;
+    display:flex;
+    flex-direction:row;
+  }
+  
 @media screen and (max-width:1140px) {
+    .bodyCrew{
+        overflow-y:scroll;
+    }
     .slides{
         display: flex;
         flex-direction: row;
@@ -333,8 +353,7 @@
     
     }
     .right_equipage img{
-        position: relative;
-        width:100%;
+        position: relative;      
         height: 100%;
     }
 }
