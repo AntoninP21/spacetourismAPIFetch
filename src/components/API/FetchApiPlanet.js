@@ -50,7 +50,7 @@ function FetchApiPlanet() {
                     <li
                       key={planet.id}
                       onClick={() => handlePlanetClick(planet)}
-                      className={planet === selectedPlanet ? 'selectedNav' : ''}
+                      className={planet === selectedPlanet ? 'selectedNav' : 'Nav'}
                     >
                       {planet.title}
                     </li>

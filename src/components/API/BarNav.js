@@ -20,7 +20,7 @@ function BarNav() {
                 <Link to='/'><li>00 HOME</li></Link>
                 <Link to='/destination'><li>01 DESTINATION</li></Link>
                 <Link to='/crew'><li>02 CREW</li></Link>
-                <a href='/'><li>03 TECHNOLOGY</li></a>
+                <Link to='/technology'><li>03 TECHNOLOGY</li></Link>
               </ul>
             </div>
         </nav>
@@ -42,11 +42,11 @@ function BarNav() {
                         <span className='bold'>02</span> CREW
                     </div>    
                 </Link>       
-                <a aria-label="Technologie" href='/'>
+                <Link to='/technology'>
                     <div className='box_nav'>    
                         <span className='bold'>03</span> TECHNOLOGY
                     </div>    
-                </a>     
+                </Link>     
         </div>                
     </div>   
 </nav>
