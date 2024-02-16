@@ -263,8 +263,8 @@
 
   .checkboxCrew{
     position: relative;
-    top: 75%;
-    right:90%;
+    top: -25%;
+    right:-10%;
     display:flex;
     flex-direction:row;
   }
@@ -273,6 +273,13 @@
     .bodyCrew{
         overflow-y:scroll;
     }
+      .checkboxCrew{
+    position: relative;
+    top: -25%;
+    right:40%;
+    display:flex;
+    flex-direction:column;
+  }
     .slides{
         display: flex;
         flex-direction: row;
