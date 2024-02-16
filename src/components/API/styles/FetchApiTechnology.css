@@ -1,0 +1,178 @@
+.bodyTechnology{
+    background-image: url("../styles/images/timelapse.png");
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+    background-position: center center; /* Centrer l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+.titre_lancement{
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    color: #D0D6F9;
+    font-weight: bolder;
+    margin-left: 5rem;
+}
+.ensemble_technologie{
+    display: flex;
+}
+.boutons_technologie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-left: 5rem;
+}
+ul{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bouton_techno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font:10px;
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #ffffff;
+    text-decoration: none;
+}
+.bouton_techno:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    font:10px;
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #ffffff;
+    text-decoration: none;
+    cursor:pointer;
+}
+.numero_boutons{
+    font-size: 25px;
+}
+.bouton_techno_selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    color: black;
+    height: 8rem;
+    width: 8rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border-color: #ffffff;
+    text-decoration: none;
+    cursor:pointer;
+}
+.texte_technologie{
+    width: 40%;
+    margin-top: 8rem;
+}
+.titre_technologie{
+    font-family: 'Bellefair', serif;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.corps_technologie{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-right: 4rem;
+}
+.image_technologie{
+    width: auto;
+    height: 700px;
+}
+.image_technologie img{
+   max-width: 450px;
+   height: auto;
+}
+@media screen and (max-width:1140px) {
+    .bodyTechnology{
+        background-image: url("../styles/images/timelapse.png");
+        margin: 0; /* Supprimer la marge par défaut du corps */
+        padding: 0; /* Supprimer le rembourrage par défaut du corps */
+        height: 100%; /* Définir la hauteur à 100% de la vue du navigateur */
+        background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+        background-position: center center; /* Centrer l'image horizontalement et verticalement */
+        background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+        background-repeat: no-repeat; /* Ne pas répéter l'image */
+    }
+        .boutons_technologie{
+            order: 2;
+            flex-direction: row;
+            justify-content: center;
+
+            width: 100%;
+            margin-left: 0rem;
+        }
+        ul{
+            height:100%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .texte_technologie{
+            text-align: center;
+            order: 3;
+            width:80%;
+            margin-bottom: 5rem;
+        }
+        .corps_technologie{
+            margin-right: 0;
+        }
+        .image_technologie{
+            order: 1;
+            width: 100%;
+            height: 500px;
+            margin-bottom: 5rem;
+        }
+        .image_technologie img{
+            object-fit: none;
+            min-width: 100%;
+            height: 500px;
+        }
+        .ensemble_technologie{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bouton_techno{
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .bouton_techno_selected{
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .titre_lancement{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+}
+@media screen and (max-width:720px){
+    .titre_lancement{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
